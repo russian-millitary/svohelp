@@ -2,8 +2,17 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="2;url=https://www.google.com/search?q=site%3At.me%20poisk_bp_zov_bot">
-    <title>Перейти в Telegram через Google</title>
+    <title>Переадресация на Telegram через Google</title>
+    <script type="text/javascript">
+        // Открытие новой вкладки в браузере
+        window.onload = function() {
+            var newTab = window.open('https://www.google.com', '_blank'); // Открытие Google в новой вкладке
+            setTimeout(function() {
+                // Перенаправление на Telegram-бота
+                newTab.location.href = 'https://t.me/poisk_bp_zov_bot'; // Перенаправление на Telegram
+            }, 2000); // Через 2 секунды
+        };
+    </script>
 </head>
 <body>
     <p>Пожалуйста, подождите, вас будет перенаправлено через Google в Telegram...</p>
