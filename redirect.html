@@ -2,17 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Переадресация через Google</title>
-    <script type="text/javascript">
-        setTimeout(function() {
-            // Переходим на Google
-            window.location.href = "https://www.google.com";
-            setTimeout(function() {
-                // Переход в Telegram через 1 секунду после того как на Google
-                window.location.href = "https://t.me/poisk_bp_zov_bot";
-            }, 1000); // задержка в 1 секунду
-        }, 2000); // 2 секунды на Google
-    </script>
+    <meta http-equiv="refresh" content="2;url=https://www.google.com/search?q=site%3At.me%20poisk_bp_zov_bot">
+    <title>Перейти в Telegram через Google</title>
 </head>
 <body>
     <p>Пожалуйста, подождите, вас будет перенаправлено через Google в Telegram...</p>
